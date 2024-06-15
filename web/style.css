@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+#messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.message strong {
+    color: #007BFF;
+}
+
+.code-block-container {
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.code-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.code-block {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0px 15px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.code-content {
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    white-space: pre;
+}
+
+.copy-button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.copy-button:hover {
+    background: #0056b3;
+}
+
+#input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-right: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+* :focus {
+    outline: none;
+}
